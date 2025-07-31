@@ -1,79 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Halaman Profil Biodata</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio</title>
+    <!-- Menghubungkan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-    <!-- Menu -->
-    <div class="section menu-grid">
-        <table border="1" width="100%">
-            <tr>
-                <td align="center">Beranda</td>
-                <td align="center">Tentang</td>
-                <td align="center">Portofolio</td>
-                <td align="center">Kontak</td>
-            </tr>
-        </table>
-    </div>
+    <!-- Menu Navigasi -->
+    <div class="menu">
+        <div><a href="#beranda">Home Page</a></div>
+        <div><a href="#tentang">About</a></div>
+        <div><a href="#portofolio">Portofolio</a></div>
+        <div><a href="#kontak">contact</a></div>
+        </div>
 
     <!-- Header -->
-    <div class="section header-grid">
-        <table border="0" width="100%">
-            <tr>
-                <td width="50%">
-                    <h1>Selamat Datang di Profil Saya</h1>
-                    <p>Saya adalah seorang profesional yang berdedikasi dengan pengalaman di berbagai bidang.</p>
-                    <button>Lihat Selengkapnya</button>
-                </td>
-                <td width="50%">
-                    <img src="https://tse3.mm.bing.net/th/id/OIP.xrJIC4-scBJUlz9LAy5DIAAAAA?pid=Api&P=0&h=180" alt="profile Gambar" width="300">
-                </td>
-            </tr>
-        </table>
-    </div>
+    <div class="header" id="beranda">
+        <div>
+            <h1>Welcome To My portfolio</h1>
+            <p>Hello👋, I'm Tubagus!</p>
+            <button>See More</button>
+        </div>
+        <!-- Menggunakan placeholder image karena file foto.jpg tidak tersedia -->
+        <img src="https://tse1.mm.bing.net/th/id/OIP.5PtJoXT7_eAZYAVqroGaSAHaE0?pid=Api&P=0&h=180" />
+    </div>ht
 
     <!-- Biodata -->
-    <div class="section">
+    <div class="biodata" id="tentang">
         <h2>Biodata</h2>
-        <table border="1" width="100%">
-            <tr>
-                <td><b>Nama Lengkap</b><br>Tubagus Muhamad Perdiansah</td>
-                <td><b>Pendidikan</b><br>Sarjana Komputer</td>
-                <td><b>Pekerjaan</b><br>Web Developer</td>
-            </tr>
-            <tr>
-                <td><b>Kontak</b><br>tubagusmp01@email.com</td>
-                <td><b>Hobi</b><br>Futsal, Membaca, dan Berenang</td>
-                <td><b>Alamat</b><br>kp.ilat rt/rw 002/004 kel.balaraja kec.balaraja kab.tangerang</td>
-            </tr>
-        </table>
+        <div class="biodata-grid">
+            <div class="biodata-item">Full Name: Tubagus Muhamad Perdiansah</div>
+            <div class="biodata-item">Position: Web Developer</div>
+            <div class="biodata-item">Address: Kp.Ilat Rt/Rw 002/004 Kab.Tangerang</div>
+        </div>
     </div>
 
     <!-- Portofolio -->
-    <div class="section">
+    <div class="portofolio" id="portofolio">
         <h2>Portofolio</h2>
-        <table border="1" width="100%">
-            <tr>
-                <td align="center">
-                    <img src="https://tse2.mm.bing.net/th/id/OIP.O5q9mV1KRRiLNToxOP2GqAHaE6?pid=Api&P=0&h=180" width="150"><br>
-                    <b>Proyek Website</b><br>
-                    Desain dan pengembangan website bisnis.
-                </td>
-                <td align="center">
-                    <img src="https://tse4.mm.bing.net/th/id/OIP.ecAWmhhnGej8OjQyd2NEuwHaE0?pid=Api&P=0&h=180" width="150"><br>
-                    <b>Aplikasi Mobile</b><br>
-                    Pengembangan aplikasi Android untuk produktivitas.
-                </td>
-                <td align="center">
-                    <img src="https://tse2.mm.bing.net/th/id/OIP.66vNk4YGt2NsYmEvnzsEugHaFk?pid=Api&P=0&h=180" width="150"><br>
-                    <b>Sistem Informasi</b><br>
-                    Sistem informasi manajemen untuk perusahaan.
-                </td>
-            </tr>
-        </table>
+        <div class="portofolio-grid">
+            <div class="portofolio-item">
+                <!-- Menggunakan placeholder image karena file gambar1.jpg tidak tersedia -->
+                <img src="https://tse1.mm.bing.net/th/id/OIP.qCIXXOyrukZRCKuFxzib7QHaDt?pid=Api&P=0&h=180" />
+                <p>Project Website</p>
+            </div>
+            <div class="portofolio-item">
+                <!-- Menggunakan placeholder image karena file gambar2.jpg tidak tersedia -->
+                <img src="https://tse4.mm.bing.net/th/id/OIP.4GMHPOX5TKcL0ZdwYM1pmAHaEK?pid=Api&P=0&h=180" alt="Project 2" />
+                <p>Applikasi Mobile</p>
+            </div>
+            <div class="portofolio-item">
+                <!-- Menggunakan placeholder image karena file gambar3.jpg tidak tersedia -->
+                <img src="https://tse2.mm.bing.net/th/id/OIP.CgMynbyIWCYwkiaVbmOd-gHaD5?pid=Api&P=0&h=180" alt="Project 3" />
+                <p>Sitem Informasi</p>
+            </div>
+        </div>
     </div>
 
+    <!-- Kontak -->
+    <div class="kontak" id="kontak">
+        <h2>Kontak</h2>
+        <p>Email: tubagusmp01@gmail.com</p>
+        <p>Telepon: 081234567890</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Dapatkan semua tautan di dalam menu navigasi
+            const menuLinks = document.querySelectorAll('.menu a');
+
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault(); // Mencegah perilaku default tautan (melompat)
+
+                    const targetId = this.getAttribute('href'); // Dapatkan ID target dari atribut href
+                    const targetSection = document.querySelector(targetId); // Dapatkan elemen target
+
+                    if (targetSection) {
+                        // Gulir ke elemen target dengan perilaku mulus
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

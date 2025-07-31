@@ -1,0 +1,201 @@
+/* Styling dasar untuk body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang sedikit abu-abu */
+    color: #333; /* Warna teks dasar */
+}
+
+/* Menu Navigasi */
+.menu {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: orangered;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Efek bayangan */
+    position: sticky; /* Membuat menu tetap di atas saat digulir */
+    top: 0;
+    z-index: 1000; /* Memastikan menu di atas elemen lain */
+}
+
+.menu div {
+    padding: 15px;
+    font-weight: bold;
+    border-right: 1px solid rgba(0,0,0,0.2); /* Border lebih lembut */
+}
+
+.menu a {
+    color: white; /* Warna tulisan jadi putih agar kontras dengan latar merah */
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    background-color: orangered;
+    padding: 15px;
+    transition: background-color 0.3s ease; /* Transisi halus saat hover */
+}
+
+.menu a:hover {
+    background-color: darkorange;
+}
+
+.menu div:last-child {
+    border-right: none;
+}
+
+/* Header */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px 20px; /* Padding lebih besar */
+    gap: 40px; /* Jarak antar kolom lebih besar */
+    align-items: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    color: #333;
+    font-size: 2.5em; /* Ukuran font lebih besar */
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2em; /* Ukuran font lebih besar */
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Sudut gambar membulat */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling untuk tombol "Lihat Selengkapnya" */
+.header button {
+    margin-top: 20px;
+    padding: 12px 25px; /* Padding tombol lebih besar */
+    background-color: orangered; /* Warna latar belakang diubah menjadi orangered */
+    color: white; /* Warna teks putih */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Ubah kursor menjadi pointer saat di hover */
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transisi halus */
+}
+
+.header button:hover {
+    background-color: darkorange; /* Warna oranye lebih gelap saat hover (sudah konsisten) */
+    transform: translateY(-2px); /* Efek sedikit terangkat saat hover */
+}
+
+/* Biodata dan Portofolio */
+.biodata,
+.portofolio {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.biodata h2,
+.portofolio h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 2em;
+}
+
+.biodata-grid,
+.portofolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Jarak antar item lebih besar */
+}
+
+.biodata-item {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: orangered; /* Warna latar belakang diubah menjadi orangered */
+    color: white; /* Warna teks diubah menjadi putih agar kontras */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.portofolio-item {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Tetap putih/abu-abu muda untuk latar belakang item portofolio */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.portofolio-item img {
+    width: 100%;
+    max-width: 250px; /* Ukuran gambar portofolio lebih besar */
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.portofolio-item p {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Kontak */
+.kontak {
+    padding: 40px 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.kontak h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2em;
+}
+
+.kontak p {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 20px;
+        padding: 30px 15px;
+    }
+
+    .biodata-grid,
+    .portofolio-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .biodata-grid,
+    .portofolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
